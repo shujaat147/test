@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        body {
+            overflow: hidden;
+        }
+
+        .sun {
+            height: 600px;
+            width: 600px;
+            background: rgb(246, 232, 13);
+            background: radial-gradient(circle, rgba(246, 232, 13, 1) 0%, rgba(255, 255, 255, 0) 70%);
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-animation: Gradient 6s ease-in-out infinite;
+            -moz-animation: Gradient 6s ease-in-out infinite;
+            animation: Gradient 6s ease-in-out infinite;
+            position: absolute;
+
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-size: 50%;
+            }
+
+            50% {
+                background-size: 100%;
+            }
+
+            100% {
+                background-size: 50%;
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-size: 50%;
+            }
+
+            50% {
+                background-size: 100%;
+            }
+
+            100% {
+                background-size: 50%;
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-size: 50%;
+            }
+
+            50% {
+                background-size: 100%;
+            }
+
+            100% {
+                background-size: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun"></div>
+</body>
+<script>
+    $(document).mousemove(function(e){
+    $(".sun").css({
+      left:e.pageX - 300, 
+      top:e.pageY - 300
+    });
+});
+</script>
+
+</html>
+
+
+
+
+Website Maintenance Package:
+- General Features (10 Hours/Month)
+- 2 Designs (Banners)
+- Text updates (client supplied)
+- Fixing broken links (up to 10/month)
+- Improving code (up to 10/month updates)
+- Optimization of client supplied images
+- Setting up email
+- Monthly traffic analysis report
+- 24/7 Support Email/Ticket
